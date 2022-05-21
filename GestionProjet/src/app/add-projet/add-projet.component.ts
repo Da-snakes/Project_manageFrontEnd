@@ -66,7 +66,7 @@ export class AddProjetComponent implements OnInit {
 
 
   changeID(){
-    this.projectService.consulterPortfolion(this.newIdPortfolio).subscribe( x =>{ this.newPortfolio = x; console.log("test3 gen: this.newGenre"); console.log(x); } ) ;
+    this.projectService.consulterPortfolio(this.newIdPortfolio).subscribe( x =>{ this.newPortfolio = x; console.log("test3 gen: this.newGenre"); console.log(x); } ) ;
 
    }
 

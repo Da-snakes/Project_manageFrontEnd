@@ -51,14 +51,14 @@ export class ProjetService {
 
 
   //API REST
-  consulterPriject(id: number): Observable<Project> {
+  consulterProject(id: number): Observable<Project> {
     const url = `${this.apiURL}/${id}`;
     return this.http.get<Project>(url);
   }
 
 
   //API REST
-  updateLivre(proj :Project) : Observable<Project>
+  updateProject(proj :Project) : Observable<Project>
   {
   return this.http.put<Project>(this.apiURL, proj, httpOptions);
   }
@@ -130,7 +130,7 @@ export class ProjetService {
   }
 
   //API REST Person
-  consulterPortfolion(id: number): Observable<Portfolio> {
+  consulterPortfolio(id: number): Observable<Portfolio> {
     const url = `${this.apiURL2}/${id}`;
     return this.http.get<Portfolio>(url);
   }
